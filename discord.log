@@ -1420,3 +1420,48 @@ aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discordap
 2020-03-30 17:23:01,453:DEBUG:discord.client: Dispatching event socket_raw_receive
 2020-03-30 17:23:01,454:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
 2020-03-30 17:23:01,454:DEBUG:discord.client: Dispatching event socket_response
+2020-03-30 17:23:42,612:DEBUG:discord.gateway: Keeping websocket alive with sequence 4.
+2020-03-30 17:23:42,613:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-03-30 17:23:42,701:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-03-30 17:23:42,701:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-03-30 17:23:42,701:DEBUG:discord.client: Dispatching event socket_response
+2020-03-30 17:24:23,864:DEBUG:discord.gateway: Keeping websocket alive with sequence 4.
+2020-03-30 17:24:23,864:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-03-30 17:24:23,952:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-03-30 17:24:23,952:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-03-30 17:24:23,952:DEBUG:discord.client: Dispatching event socket_response
+2020-03-30 17:25:05,115:DEBUG:discord.gateway: Keeping websocket alive with sequence 4.
+2020-03-30 17:25:05,116:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-03-30 17:25:05,205:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-03-30 17:25:05,205:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-03-30 17:25:05,205:DEBUG:discord.client: Dispatching event socket_response
+2020-03-30 17:25:46,368:DEBUG:discord.gateway: Keeping websocket alive with sequence 4.
+2020-03-30 17:25:46,368:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-03-30 17:25:46,457:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-03-30 17:25:46,458:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-03-30 17:25:46,458:DEBUG:discord.client: Dispatching event socket_response
+2020-03-30 17:26:27,619:DEBUG:discord.gateway: Keeping websocket alive with sequence 4.
+2020-03-30 17:26:27,620:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-03-30 17:26:27,712:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-03-30 17:26:27,712:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-03-30 17:26:27,712:DEBUG:discord.client: Dispatching event socket_response
+2020-03-30 17:27:08,871:DEBUG:discord.gateway: Keeping websocket alive with sequence 4.
+2020-03-30 17:27:08,872:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-03-30 17:27:08,960:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-03-30 17:27:08,961:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-03-30 17:27:08,961:DEBUG:discord.client: Dispatching event socket_response
+2020-03-30 17:27:50,123:DEBUG:discord.gateway: Keeping websocket alive with sequence 4.
+2020-03-30 17:27:50,124:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-03-30 17:27:50,212:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-03-30 17:27:50,212:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-03-30 17:27:50,212:DEBUG:discord.client: Dispatching event socket_response
+2020-03-30 17:28:31,375:DEBUG:discord.gateway: Keeping websocket alive with sequence 4.
+2020-03-30 17:28:31,375:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-03-30 17:28:31,474:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-03-30 17:28:31,474:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-03-30 17:28:31,474:DEBUG:discord.client: Dispatching event socket_response
+2020-03-30 17:29:12,627:DEBUG:discord.gateway: Keeping websocket alive with sequence 4.
+2020-03-30 17:29:12,627:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-03-30 17:29:12,720:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-03-30 17:29:12,720:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-03-30 17:29:12,720:DEBUG:discord.client: Dispatching event socket_response
