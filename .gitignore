@@ -1,1 +1,5 @@
+__pycache__/
 .env
+BookBackup
+bot.py
+base_bot.py
