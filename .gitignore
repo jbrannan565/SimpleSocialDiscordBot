@@ -1,6 +1,8 @@
 __pycache__/
+*/__pycache__/
 *.log
 .env
+resources/*
 BookBackup
 bot.py
 base_bot.py
