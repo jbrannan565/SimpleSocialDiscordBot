@@ -16,7 +16,7 @@ vim .env
 ```
 
 ## Installation
-
+Configure a local MongoDB service
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install discord and dotenv
 
 ```bash
@@ -35,9 +35,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## Changes to be Added
-1. Database connection that is more robust than json text files (MongoDB).
-2. Parlimentary system for voting and group goal construction, called "Voting" and "Goals" respectively.
-3. System for members to report their progress on goals, called "Goals"
+1. Parlimentary system for voting and group goal construction, called "Voting" and "Goals" respectively.
+2. System for members to report their progress on goals, called "Goals"
 
 ## License
 [GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/)
