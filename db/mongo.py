@@ -43,11 +43,11 @@ def update_resource(resource_type, query, data):
     '''
     data['last_update'] = datetime.utcnow()
     resource_collection = db[resource_type]
-    return resource_collection.find_one_and_update(query, data)
+    return resource_collection.find_one_and_update(query, { "$set": data })
 
 def delete_resource(resource_type, query):
     '''
     deletes resource found by query
     '''
     resource_collection = db[resource_type]
-    return resource_collection.delete_one(query).delete_count
+    return resource_collection.delete_one(query).deleted_count
