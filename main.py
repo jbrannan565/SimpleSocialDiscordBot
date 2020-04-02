@@ -6,6 +6,7 @@ from discord.ext import commands
 from dotenv import load_dotenv
 from lib.greeting import Greeting
 from lib.resources import Resources
+from lib.parlement import Parlement
 
 # set up loggin
 import logging
@@ -25,4 +26,5 @@ bot = commands.Bot(command_prefix=COMMAND_PREFIX)
 
 bot.add_cog(Greeting(bot))
 bot.add_cog(Resources(bot))
+bot.add_cog(Parlement(bot))
 bot.run(TOKEN)
