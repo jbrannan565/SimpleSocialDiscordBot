@@ -3,8 +3,7 @@ A bot for managing a Simple Social Club over discord.
 A comprehensive layout of what a Simple Social Club is, and what the goals of such a club should be is to come.
 
 ## Getting started
-Create a .env file with at least the attributes DISCORD_TOKEN and COMMAND_PREFIX based on .example_env.
-Currently the DISCORD_GUILD attribute is not required, but recommended.
+Create a [.env](https://github.com/jbrannan565/SimpleSocialDiscordBot/wiki/Environment-Variables) file with at least the attributes DISCORD_TOKEN and COMMAND_PREFIX based on .example_env.
 
 ```
 # Make the directory where club content should be stored
