@@ -19,7 +19,6 @@ logger.addHandler(handler)
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
-GUILD = os.getenv('DISCORD_GUILD')
 COMMAND_PREFIX = os.getenv('COMMAND_PREFIX')
 PARLEMENT_CHANNEL = os.getenv('PARLEMENT_CHANNEL')
 
