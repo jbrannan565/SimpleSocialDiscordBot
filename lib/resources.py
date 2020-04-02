@@ -4,34 +4,7 @@ import json
 import discord
 from db.mongo import read_resources, read_resources_where, create_resource, update_resource, delete_resource
 from discord.ext import commands
-
-def convert(args):
-    ret = {}
-
-    args = " ".join(args)
-    args = args.split(', ')
-
-    for a in args:
-        a = a.split('=')
-        ret[a[0]] = a[1]
-    
-    return ret
-
-def dict_to_string(resource):
-    _resource = ""
-    for (key,val) in resource.items():
-        if key == "_id" or key == "last_update":
-            continue
-        _resource += f"\t{key}: {val}\n"
-    return _resource
-
-def cursor_to_string(cursor):
-    _ret = ""
-    for c in cursor:
-        _ret += dict_to_string(c)
-        _ret += "\n"
-    return _ret
-
+from lib.converters import *
 
 class Resources(commands.Cog):
     def __init__(self, bot):
@@ -42,7 +15,7 @@ class Resources(commands.Cog):
     async def add(self, ctx, resource_type, *args):
         role = discord.utils.find(lambda r: r.name == f"{resource_type} Czar", ctx.author.roles)
         if role:
-            resource = create_resource(resource_type, convert(args))
+            resource = create_resource(resource_type, convert_arg_to_dict(args))
             if resource:
                 await ctx.send(f"{resource_type} added!")
             else:
@@ -72,7 +45,7 @@ class Resources(commands.Cog):
         query = sep_vals[0].split(" ")
         args = sep_vals[1].split(" ")
 
-        resource = update_resource(resource_type, convert(query), convert(args))
+        resource = update_resource(resource_type, convert_arg_to_dict(query), convert_arg_to_dict(args))
         if resource:
             await ctx.send(f"{resource_type} updated!")
         else:
@@ -93,7 +66,7 @@ class Resources(commands.Cog):
         if "=" not in " ".join(args):
             await ctx.send(f"No query provided...")
             return
-        args = convert(args)
+        args = convert_arg_to_dict(args)
         _resources = read_resources_where(resource_type, args)
         _resources = cursor_to_string(_resources)
         if _resources:
@@ -107,6 +80,6 @@ class Resources(commands.Cog):
         if not args.startswith("where "):
             return "Syntax error"
         args = args[len("where "):]
-        args = convert(args.split(" "))
+        args = convert_arg_to_dict(args.split(" "))
         removed = delete_resource(resource_type, args)
         await ctx.send(f"{removed} {resource_type} deleted.")
