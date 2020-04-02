@@ -1,6 +1,6 @@
 from db.mongo import db
 
-class ParliamentDB(Object):
+class ParliamentDB:
     def __init__(self):
         self.collection = db.motions
 
@@ -15,6 +15,9 @@ class ParliamentDB(Object):
 
     def read_closed(self):
         return self.collection.find({"status": "closed"})
+
+    def read_by_name(self, name):
+        return self.collection.find({"name": name})
 
     def create(self, name, description):
         data = {
@@ -49,7 +52,7 @@ class ParliamentDB(Object):
                 "name": motion_name
             },
             {
-                "$push": { "amendments": amendment }
+                "$addToSet": { "amendments": amendment }
             }
         )
 
