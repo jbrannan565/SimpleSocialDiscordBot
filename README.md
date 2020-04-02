@@ -34,7 +34,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## Changes to be Added
-1. Parlimentary system for voting and group goal construction, called "Voting" and "Goals" respectively.
+1. Parlimentary system for group goal construction.
 2. System for members to report their progress on goals, called "Goals"
 
 ## License
