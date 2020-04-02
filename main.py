@@ -20,11 +20,11 @@ logger.addHandler(handler)
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 COMMAND_PREFIX = os.getenv('COMMAND_PREFIX')
-PARLEMENT_CHANNEL = os.getenv('PARLEMENT_CHANNEL')
+PARLIAMENT_CHANNEL = os.getenv('PARLIAMENT_CHANNEL')
 
 bot = commands.Bot(command_prefix=COMMAND_PREFIX)
 
 bot.add_cog(Greeting(bot))
 bot.add_cog(Resources(bot))
-bot.add_cog(Parlement(bot, PARLEMENT_CHANNEL))
+bot.add_cog(Parlement(bot, PARLIAMENT_CHANNEL))
 bot.run(TOKEN)

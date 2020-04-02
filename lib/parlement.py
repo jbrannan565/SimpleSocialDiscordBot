@@ -1,6 +1,6 @@
 from discord.ext import commands
 
-class Parlement(commands.Cog):
+class Parliament(commands.Cog):
     def __init__(self, bot, channel_name):
         self.bot = bot
         self._last_member = None
@@ -13,7 +13,7 @@ class Parlement(commands.Cog):
     async def motion(self, ctx):
         if ctx.channel.name != self.channel_name:
             await ctx.send(
-                f"Parlementary actions can only be done inside the #{self.channel_name} channel."
+                f"Parliamentary actions can only be done inside the #{self.channel_name} channel."
                 )
             return
             
