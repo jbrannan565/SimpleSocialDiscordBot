@@ -2,7 +2,7 @@ import re
 import os
 import json
 import discord
-from db.mongo import read_resources, read_resources_where, create_resource, update_resource, delete_resource
+from db.resources import *
 from discord.ext import commands
 from lib.converters import *
 
