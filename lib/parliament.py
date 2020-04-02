@@ -19,4 +19,3 @@ class Parliament(commands.Cog):
             
         if ctx.invoked_subcommand is None:
             await ctx.send("Invalid motion argument...")
-
