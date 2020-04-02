@@ -21,10 +21,11 @@ load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 GUILD = os.getenv('DISCORD_GUILD')
 COMMAND_PREFIX = os.getenv('COMMAND_PREFIX')
+PARLEMENT_CHANNEL = os.getenv('PARLEMENT_CHANNEL')
 
 bot = commands.Bot(command_prefix=COMMAND_PREFIX)
 
 bot.add_cog(Greeting(bot))
 bot.add_cog(Resources(bot))
-bot.add_cog(Parlement(bot))
+bot.add_cog(Parlement(bot, PARLEMENT_CHANNEL))
 bot.run(TOKEN)
