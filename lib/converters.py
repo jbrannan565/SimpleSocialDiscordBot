@@ -15,14 +15,20 @@ def dict_to_string(resource):
     for (key,val) in resource.items():
         if key == "_id" or key == "last_update":
             continue
+        if type(val) is list:
+            _resource += f"\t{key}:\n"
+            for v in val:
+                _resource += f"\t\t- {v}\n"
+            continue
         _resource += f"\t{key}: {val}\n"
     return _resource
 
 def cursor_to_string(cursor):
     _ret = ""
     for c in cursor:
-        _ret += dict_to_string(c)
-        _ret += "\n"
+        if type(c) is dict:
+            _ret += dict_to_string(c)
+            _ret += "\n"
     return _ret
 
 
