@@ -33,7 +33,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
-## Changes to be Added
+## Changes to be Implemented
 1. Parlimentary system for group goal construction.
 2. System for members to report their progress on goals, called "Goals".
 3. Resources commands should be updated to use the Group object rather than manual string parsing.
