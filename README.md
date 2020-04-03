@@ -35,7 +35,8 @@ Please make sure to update tests as appropriate.
 
 ## Changes to be Added
 1. Parlimentary system for group goal construction.
-2. System for members to report their progress on goals, called "Goals"
+2. System for members to report their progress on goals, called "Goals".
+3. Resources commands should be updated to use the Group object rather than manual string parsing.
 
 ## License
 [GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/)
